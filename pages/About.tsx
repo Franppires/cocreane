@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-black text-white">Nossa <span className="text-brand-accent">Missão</span></h1>
           <p className="mt-4 text-lg text-brand-gray max-w-3xl mx-auto">
-            Capacitar empresas com soluções digitais transformadoras que sejam inovadoras, confiáveis e perfeitamente alinhadas com seus objetivos.
+            Capacitar negócios com soluções digitais transformadoras que são inovadoras, confiáveis e perfeitamente alinhadas com seus objetivos.
           </p>
         </div>
 
@@ -17,14 +17,14 @@ const About: React.FC = () => {
           <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold text-white mb-4">Quem Somos</h2>
             <p className="text-brand-gray mb-4">
-              A Cocreane foi fundada com o princípio de que grandes websites nascem da intersecção entre design brilhante, código limpo e uma compreensão profunda das necessidades dos usuários. Somos um coletivo de criadores, pensadores e solucionadores de problemas que compartilham paixão pela tecnologia e seu potencial para conectar pessoas.
+              A Cocreane foi fundada com o princípio de que ótimos websites nascem da interseção entre design brilhante, código limpo e uma compreensão profunda das necessidades dos usuários. Somos um coletivo de criadores, pensadores e resolvedores de problemas que compartilham paixão por tecnologia e seu potencial de conectar pessoas.
             </p>
             <p className="text-brand-gray">
-              Nossa abordagem é simples: ouvimos, colaboramos e entregamos. Desde o conceito inicial até a implantação final, trabalhamos lado a lado com nossos clientes para garantir que cada projeto seja um sucesso retumbante.
+              Nossa abordagem é simples: ouvimos, colaboramos e entregamos resultados. Do conceito inicial até o lançamento final, trabalhamos lado a lado com nossos clientes para garantir que cada projeto seja um sucesso absoluto.
             </p>
           </div>
           <div className="order-1 md:order-2">
-            <img src="https://picsum.photos/seed/mission/800/600" alt="Collaborative meeting" className="rounded-lg shadow-2xl shadow-brand-accent/20" />
+            <img src="https://picsum.photos/seed/mission/800/600" alt="Reunião colaborativa" className="rounded-lg shadow-2xl shadow-brand-accent/20" />
           </div>
         </div>
       </AnimatedSection>
@@ -33,21 +33,25 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white text-center mb-12">Nossos Valores Fundamentais</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 bg-brand-primary rounded-lg">
-              <h3 className="text-xl font-semibold text-brand-accent mb-2">Inovação</h3>
-              <p className="text-brand-gray text-sm">Exploramos constantemente novas tecnologias e abordagens criativas para estar sempre à frente.</p>
+            <div className="reveal glassmorphism p-8 rounded-2xl border border-brand-accent/20 card-hover">
+              <h3 className="text-xl font-semibold text-brand-accent mb-3">Inovação</h3>
+              <p className="text-brand-gray text-sm leading-relaxed">Exploramos constantemente novas tecnologias e abordagens criativas para ficar à frente.</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-brand-accent to-purple-600 rounded-full mt-4 group-hover:w-full transition-all duration-500" />
             </div>
-            <div className="text-center p-6 bg-brand-primary rounded-lg">
-              <h3 className="text-xl font-semibold text-brand-accent mb-2">Qualidade</h3>
-              <p className="text-brand-gray text-sm">Somos comprometidos com os mais altos padrões de excelência em tudo que construímos.</p>
+            <div className="reveal glassmorphism p-8 rounded-2xl border border-brand-accent/20 card-hover">
+              <h3 className="text-xl font-semibold text-brand-accent mb-3">Qualidade</h3>
+              <p className="text-brand-gray text-sm leading-relaxed">Comprometidos com os mais altos padrões de excelência em tudo que construímos.</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-brand-accent to-purple-600 rounded-full mt-4 group-hover:w-full transition-all duration-500" />
             </div>
-            <div className="text-center p-6 bg-brand-primary rounded-lg">
-              <h3 className="text-xl font-semibold text-brand-accent mb-2">Parceria</h3>
-              <p className="text-brand-gray text-sm">Acreditamos em construir relacionamentos fortes e colaborativos com nossos clientes.</p>
+            <div className="reveal glassmorphism p-8 rounded-2xl border border-brand-accent/20 card-hover">
+              <h3 className="text-xl font-semibold text-brand-accent mb-3">Parceria</h3>
+              <p className="text-brand-gray text-sm leading-relaxed">Acreditamos em construir relações colaborativas fortes e duradouras com clientes.</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-brand-accent to-purple-600 rounded-full mt-4 group-hover:w-full transition-all duration-500" />
             </div>
-            <div className="text-center p-6 bg-brand-primary rounded-lg">
-              <h3 className="text-xl font-semibold text-brand-accent mb-2">Integridade</h3>
-              <p className="text-brand-gray text-sm">Operamos com transparência, honestidade e compromisso em fazer a coisa certa.</p>
+            <div className="reveal glassmorphism p-8 rounded-2xl border border-brand-accent/20 card-hover">
+              <h3 className="text-xl font-semibold text-brand-accent mb-3">Integridade</h3>
+              <p className="text-brand-gray text-sm leading-relaxed">Operamos com transparência, honestidade e compromisso em fazer o certo.</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-brand-accent to-purple-600 rounded-full mt-4 group-hover:w-full transition-all duration-500" />
             </div>
           </div>
         </div>
