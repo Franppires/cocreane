@@ -4,7 +4,7 @@ import AnimatedSection from '../components/AnimatedSection';
 
 const About: React.FC = () => {
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-24">
       <AnimatedSection className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-black text-white">Nossa <span className="text-brand-accent">Missão</span></h1>
@@ -24,7 +24,7 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="order-1 md:order-2">
-            <img src="https://picsum.photos/seed/mission/800/600" alt="Reunião colaborativa" className="rounded-lg shadow-2xl shadow-brand-accent/20" />
+            <img src="/images/about-cocreane.jpg" alt="Reunião colaborativa" className="rounded-lg shadow-2xl shadow-brand-accent/20" />
           </div>
         </div>
       </AnimatedSection>

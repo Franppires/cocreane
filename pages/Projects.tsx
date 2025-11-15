@@ -5,10 +5,10 @@ import AnimatedSection from '../components/AnimatedSection';
 import { Project } from '../types';
 
 const allProjects: Project[] = [
-  { id: 1, title: 'Plataforma E-commerce', description: 'Uma solução de e-commerce escalável e moderna com foco em experiência do usuário e performance.', imageUrl: 'https://picsum.photos/seed/ecom/600/400', tags: ['React', 'TypeScript', 'Node.js'] },
-  { id: 2, title: 'Website Corporativo', description: 'Um website corporativo profissional e elegante para fortalecer identidade de marca.', imageUrl: 'https://picsum.photos/seed/corp/600/400', tags: ['Next.js', 'Tailwind CSS'] },
-  { id: 3, title: 'Dashboard SaaS', description: 'Um dashboard intuitivo e orientado a dados para um produto inovador de Software as a Service.', imageUrl: 'https://picsum.photos/seed/saas/600/400', tags: ['React', 'D3.js', 'Firebase'] },
-  { id: 4, title: 'App Mobile Banking', description: 'Uma aplicação mobile segura e user-friendly para transações bancárias em qualquer lugar.', imageUrl: 'https://picsum.photos/seed/bank/600/400', tags: ['React Native', 'Segurança', 'UX/UI'] },
+  { id: 1, title: 'Plataforma E-commerce', description: 'Uma solução de e-commerce escalável e moderna com foco na experiência do usuário e no desempenho.', imageUrl: 'https://picsum.photos/seed/ecom/600/400', tags: ['React', 'TypeScript', 'Node.js'] },
+  { id: 2, title: 'Website Corporativo', description: 'Um website corporativo profissional e elegante para fortalecer a identidade da marca.', imageUrl: 'https://picsum.photos/seed/corp/600/400', tags: ['Next.js', 'Tailwind CSS'] },
+  { id: 3, title: 'Painel SaaS', description: 'Um painel intuitivo e orientado a dados para um produto inovador de Software como Serviço.', imageUrl: 'https://picsum.photos/seed/saas/600/400', tags: ['React', 'D3.js', 'Firebase'] },
+  { id: 4, title: 'App Mobile Banking', description: 'Uma aplicação mobile segura e fácil de usar para transações bancárias em qualquer lugar.', imageUrl: 'https://picsum.photos/seed/bank/600/400', tags: ['React Native', 'Segurança', 'UX/UI'] },
   { id: 5, title: 'Portfólio Criativo', description: 'Um website de portfólio visualmente rico para um profissional criativo.', imageUrl: 'https://picsum.photos/seed/portfolio/600/400', tags: ['Gatsby', 'GraphQL', 'Animações'] },
   { id: 6, title: 'Plataforma de Aprendizado', description: 'Uma plataforma interativa para cursos online e engajamento comunitário.', imageUrl: 'https://picsum.photos/seed/learn/600/400', tags: ['Vue.js', 'Node.js', 'Web Sockets'] },
 ];
@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-black text-white">Nosso <span className="text-brand-accent">Portfólio</span></h1>
             <p className="mt-4 text-lg text-brand-gray max-w-3xl mx-auto">
-              Nos orgulhamos do nosso trabalho. Explore uma seleção de projetos que demonstram nossas habilidades, criatividade e compromisso com qualidade.
+              Temos orgulho do nosso trabalho. Explore uma seleção de projetos que demonstram nossas habilidades, criatividade e compromisso com a qualidade.
             </p>
           </div>
 

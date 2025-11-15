@@ -65,51 +65,10 @@ const Contact: React.FC = () => {
       {/* Contact Form Section */}
       <AnimatedSection>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Contact Info */}
-            <div className="md:col-span-1 space-y-6">
-              <div className="reveal glassmorphism p-8 rounded-2xl border border-brand-accent/20">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-brand-accent to-purple-600 rounded-lg flex items-center justify-center">
-                    <span className="text-xl">📧</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-white">Email</h3>
-                </div>
-                <a href="mailto:contato.cocreane@gmail.com" className="text-brand-gray hover:text-brand-accent transition-colors duration-300">
-                  contato.cocreane@gmail.com
-                </a>
-              </div>
-
-              <div className="reveal glassmorphism p-8 rounded-2xl border border-brand-accent/20">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center">
-                    <span className="text-xl">💬</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-white">WhatsApp</h3>
-                </div>
-                <a href="https://wa.me/5514998098786" target="_blank" rel="noopener noreferrer" className="text-brand-gray hover:text-green-400 transition-colors duration-300">
-                  +55 14 99809-8786
-                </a>
-                <p className="text-sm text-brand-gray mt-2">Resposta rápida via WhatsApp</p>
-              </div>
-
-              <div className="reveal glassmorphism p-8 rounded-2xl border border-brand-accent/20">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center">
-                    <span className="text-xl">⏰</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-white">Horário</h3>
-                </div>
-                <p className="text-brand-gray text-sm">
-                  Segunda a Sexta<br />
-                  9:00 AM - 6:00 PM
-                </p>
-              </div>
-            </div>
-
+          <div className="grid md:grid-cols-1 gap-8">
             {/* Form */}
-            <div className="md:col-span-2">
-              <div className="glassmorphism p-8 md:p-10 rounded-2xl border border-brand-accent/20 shadow-2xl">
+            <div>
+              <div className="glassmorphism p-6 md:p-8 rounded-2xl border border-brand-accent/20 shadow-2xl max-w-2xl mx-auto">
                 {formState === 'success' ? (
                   <div className="text-center py-12 reveal">
                     <div className="text-6xl mb-4">✨</div>
@@ -130,7 +89,7 @@ const Contact: React.FC = () => {
                           onChange={handleChange}
                           placeholder="João Silva"
                           required
-                          className="w-full bg-brand-primary text-white p-4 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50"
+                          className="w-full bg-brand-primary text-white p-3 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50"
                         />
                       </div>
                       <div className="reveal reveal-delay-1">
@@ -142,7 +101,7 @@ const Contact: React.FC = () => {
                           onChange={handleChange}
                           placeholder="joao@example.com"
                           required
-                          className="w-full bg-brand-primary text-white p-4 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50"
+                          className="w-full bg-brand-primary text-white p-3 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50"
                         />
                       </div>
                     </div>
@@ -157,7 +116,7 @@ const Contact: React.FC = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           placeholder="(14) 99809-8786"
-                          className="w-full bg-brand-primary text-white p-4 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50"
+                          className="w-full bg-brand-primary text-white p-3 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50"
                         />
                       </div>
                       <div className="reveal reveal-delay-3">
@@ -167,7 +126,7 @@ const Contact: React.FC = () => {
                           value={formData.projectType}
                           onChange={handleChange}
                           required
-                          className="w-full bg-brand-primary text-white p-4 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300"
+                          className="w-full bg-brand-primary text-white p-3 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300"
                         >
                           <option value="">Selecione um tipo...</option>
                           <option value="website">Website Corporativo</option>
@@ -209,21 +168,23 @@ const Contact: React.FC = () => {
                         placeholder="Descreva brevemente suas ideias, objetivos e qualquer detalhe importante..."
                         rows={5}
                         required
-                        className="w-full bg-brand-primary text-white p-4 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50 resize-none"
+                        className="w-full bg-brand-primary text-white p-3 rounded-lg border border-brand-accent/30 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition-all duration-300 placeholder-brand-gray/50 resize-none"
                       />
                     </div>
 
                     {/* Submit Button */}
                     <div className="reveal reveal-delay-4">
-                      <button
-                        type="submit"
-                        disabled={formState === 'submitting'}
-                        className="w-full gradient-button text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
-                      >
-                        <span className="relative z-10">
-                          {formState === 'submitting' ? 'Enviando...' : 'Enviar Mensagem'}
-                        </span>
-                      </button>
+                      <div className="text-center">
+                        <button
+                          type="submit"
+                          disabled={formState === 'submitting'}
+                          className="mx-auto block gradient-button text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
+                        >
+                          <span className="relative z-10">
+                            {formState === 'submitting' ? 'Enviando...' : 'Enviar Mensagem'}
+                          </span>
+                        </button>
+                      </div>
                     </div>
 
                     {/* Error Message */}

@@ -71,7 +71,7 @@ const Header: React.FC = () => {
               to="/contact" 
               className="relative overflow-hidden bg-gradient-to-r from-brand-accent to-purple-600 text-white font-semibold py-2.5 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-brand-accent/50 hover:scale-105"
             >
-              <span className="relative z-10">Comece Agora</span>
+              <span className="relative z-10">Comece agora</span>
             </Link>
           </div>
           
@@ -107,7 +107,7 @@ const Header: React.FC = () => {
               onClick={() => setIsMenuOpen(false)}
               className="w-full mt-4 text-center bg-gradient-to-r from-brand-accent to-purple-600 text-white font-semibold py-2 rounded-lg transition-all duration-300 hover:shadow-lg"
             >
-              Comece Agora
+              Começe agora
             </Link>
           </div>
         </div>
