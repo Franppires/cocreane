@@ -14,6 +14,9 @@ interface FormData {
 }
 
 const Contact: React.FC = () => {
+  // Configure seu endpoint Formspree aqui (substitua pelo seu ID)
+  // Crie um formulário em https://formspree.io/ e copie o endpoint (ex: https://formspree.io/f/abcdxyz)
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mrbrabjq';
   const [formState, setFormState] = useState<FormState>('idle');
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -29,20 +32,30 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormState('submitting');
-    // Simulate API call
-    setTimeout(() => {
-      // Simulate a random success/error for demonstration
-      if (Math.random() > 0.1) {
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (res.ok) {
         setFormState('success');
         setFormData({ name: '', email: '', phone: '', projectType: '', budget: '', message: '' });
         setTimeout(() => setFormState('idle'), 3000);
       } else {
         setFormState('error');
       }
-    }, 1500);
+    } catch (err) {
+      setFormState('error');
+    }
   };
 
   return (
