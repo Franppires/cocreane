@@ -1,20 +1,98 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="Cocreane Banner" src="https://picsum.photos/seed/cocreane/1200/475" />
 </div>
 
-# Run and deploy your AI Studio app
+# Cocreane - Soluções Digitais Modernas
 
-This contains everything you need to run your app locally.
+Um website moderno e responsivo para Cocreane, empresa especializada em soluções web e mobile.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1oxHjVmKpEhtQUbzsyRHpLTWM9xxvGV0D
+## 🚀 Características
 
-## Run Locally
+- **Design Moderno**: Interface visual contemporânea com gradientes e efeitos glassmorphism
+- **Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
+- **Performance**: Otimizado para velocidade e SEO
+- **Componentes Reutilizáveis**: Arquitetura limpa e escalável
+- **Animações Suaves**: Transições e efeitos visuais elegantes
+- **Formulário de Contato**: Página de contato completa e funcional
 
-**Prerequisites:**  Node.js
+## 🛠️ Tecnologias
 
+- **React 19** - Framework principal
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização utilitária
+- **Vite** - Build tool e dev server
+- **React Router DOM** - Navegação entre páginas
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📋 Pré-requisitos
+
+- Node.js (versão 16+)
+- npm ou yarn
+
+## 🚀 Executar Localmente
+
+1. Clone ou baixe o repositório
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+
+## 📦 Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run preview` - Preview da build de produção
+
+## 📁 Estrutura do Projeto
+
+```
+cocreane/
+├── components/          # Componentes reutilizáveis
+│   ├── AnimatedSection.tsx
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── ProjectCard.tsx
+│   ├── ServiceCard.tsx
+│   ├── StatItem.tsx
+│   ├── TestimonialCard.tsx
+│   └── FloatingWhatsAppButton.tsx
+├── pages/              # Páginas da aplicação
+│   ├── Home.tsx
+│   ├── About.tsx
+│   ├── Projects.tsx
+│   └── Contact.tsx
+├── styles.css          # Estilos globais e animações
+├── App.tsx            # Componente raiz
+├── index.tsx          # Entry point
+└── types.ts           # Tipos TypeScript
+```
+
+## 🎨 Customização
+
+### Cores da Marca
+Edite o arquivo `index.html` na seção tailwind.config:
+```javascript
+colors: {
+  'brand-primary': '#0D0D2B',
+  'brand-secondary': '#25254B',
+  'brand-accent': '#3671E9',
+  'brand-light': '#F2F2F2',
+  'brand-gray': '#BDBDBD',
+}
+```
+
+### Fontes
+As fontes estão carregadas via Google Fonts (Inter). Edite em `index.html`.
+
+## 📞 Contato
+
+- **Email**: contato.cocreane@gmail.com
+- **WhatsApp**: +55 14 99809-8786
+
+## 📄 Licença
+
+Este projeto é propriedade da Cocreane. Todos os direitos reservados.

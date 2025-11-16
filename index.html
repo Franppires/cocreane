@@ -1,11 +1,15 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/jpeg" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocreane - Modern Web Solutions</title>
+    <meta name="description" content="Cocreane - Soluções digitais modernas. Criamos experiências que transformam negócios." />
+    <meta name="keywords" content="web design, desenvolvimento web, aplicações mobile, UX/UI" />
+    <meta name="theme-color" content="#0D0D2B" />
+    <title>Cocreane - Soluções Digitais Modernas</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -22,17 +26,32 @@
               sans: ['Inter', 'sans-serif'],
             },
             animation: {
-              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
               'pulse-subtle': 'pulseSubtle 2s infinite ease-in-out',
+              'float': 'float 3s ease-in-out infinite',
+              'glow': 'glow 3s ease-in-out infinite',
+              'shimmer': 'shimmer 2s infinite',
             },
             keyframes: {
               fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '0%': { opacity: '0', transform: 'translateY(40px)' },
                 '100%': { opacity: '1', transform: 'translateY(0)' },
               },
               pulseSubtle: {
                 '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(54, 113, 233, 0.7)' },
                 '50%': { transform: 'scale(1.05)', boxShadow: '0 0 0 10px rgba(54, 113, 233, 0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              glow: {
+                '0%, 100%': { boxShadow: '0 0 5px rgba(54, 113, 233, 0.5)' },
+                '50%': { boxShadow: '0 0 20px rgba(54, 113, 233, 1)' },
+              },
+              shimmer: {
+                '0%': { backgroundPosition: '-1000px 0' },
+                '100%': { backgroundPosition: '1000px 0' },
               }
             }
           }
@@ -41,21 +60,11 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
   <body class="bg-brand-primary text-brand-light font-sans">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
